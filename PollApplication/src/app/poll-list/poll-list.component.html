@@ -1,0 +1,13 @@
+<div class="card" style="width: 30rem;">
+  <div class="card-body">
+  	<img style="height: 100%; width: 100%;" [src]="image" class="card-img-top"  alt="Card image cap">
+    <h5 class="card-title">{{question}}</h5>
+    <!--<p class="card-text">Options are </p>
+	<p *ngFor="let i of options">
+		{{i}}
+	</p>-->
+    
+    <a href="#" class="card-link badge badge-success"> {{total_votes}} votes</a>
+    <small href="#" *ngIf="voted" class=" card-link badge badge-success">Voted</small>
+  </div>
+</div>

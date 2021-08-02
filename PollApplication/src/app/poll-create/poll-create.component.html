@@ -1,0 +1,17 @@
+<form [formGroup]="pollForm" (ngSubmit)="submitForm()">
+  <div class="form-group">
+    <label>Question:</label>
+    <input formControlName="question" type="text" class="form-control" id="question" aria-describedby="QuestionForPoll" placeholder="Enter your question...">
+
+    <label>Image Link:</label>
+    <input formControlName="image" type="text" class="form-control" id="image_link" aria-describedby="ImageLink" placeholder="Enter Image Link...">
+
+    <label>Options:</label>
+    <input formControlName="option1" type="text" class="form-control" id="options" aria-describedby="OptionForPoll" placeholder="Option1..."> &nbsp;
+    <input formControlName="option2" type="text" class="form-control" id="options" aria-describedby="OptionForPoll" placeholder="Option2..."> &nbsp;
+    <input formControlName="option3" type="text" class="form-control" id="options" aria-describedby="OptionForPoll" placeholder="Option3..."> &nbsp;
+    <input formControlName="option4" type="text" class="form-control" id="options" aria-describedby="OptionForPoll" placeholder="Option4..."> &nbsp;
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
